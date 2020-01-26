@@ -1,0 +1,117 @@
+
+
+/* First block of the page */
+
+.title{
+    text-align: center;
+    border-bottom: 2.5px solid #b1b0b0;
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+body{
+    background-image:url(../images/dust_scratches.png);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(2, 90, 90);
+}
+
+
+/* Schedule block */
+
+.scheduleContainer{
+    height: 100%;
+}
+
+.schedule{
+    line-height: 2rem;
+}
+
+.hour{
+    background-color: rgb(27, 104, 104);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2.5px solid #b1b0b0;
+    margin-bottom: 5px;
+}
+
+.toDo{
+    background-color: rgb(109, 196, 196);
+    border: 2.5px solid #b1b0b0;
+    height: 100%;
+    width: 100%;
+    font-size:20px;
+}
+
+.paddingAdjust{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 5px;
+}
+
+.save{
+    background-color: rgb(27, 104, 104);
+    padding: auto;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2.5px solid #b1b0b0;
+    margin-bottom: 5px;
+}
+
+.saveImage{
+    width:1rem;
+    padding: 1.5rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    cursor: pointer;    
+}
+
+.space{
+    line-height: 50;
+}
+
+.amPm{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+
+.saveImage{
+    width: 8%;
+    }
+
+.paddingAdjustcell{
+    margin-left: 18px;
+    margin-right: -15px;
+    margin-bottom: 5px;
+  
+    }
+    
+.save{
+    background-color: rgb(27, 104, 104);
+    padding: auto;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 5px solid #3f3f3f;
+    margin-bottom: 25px;
+}
+
+.hour{
+    background-color: rgb(27, 104, 104);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 5px solid #3f3f3f;
+    margin-bottom: 5px;
+}
+
+}
+

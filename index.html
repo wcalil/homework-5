@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Work Day Scheduler</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div>
+
+        <div class="row title">
+            <div class="col-md-12">
+                <h1> Work Day Scheduler</h1>
+                <p>A simple calendar app for scheduling your workday</p>
+                <p id="currentDate"> </p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div>
+
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 9am hour">
+                <p class="amPm">9 am</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell"  id="9"  placeholder="Start writing your ToDo's in the light green spots...">Hi</textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save9am">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 10am hour">
+                <p class="amPm">10 am</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell" id="10"></textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save10am">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 11am hour">
+                <p class="amPm">11 am</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell" id="11"></textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save11am">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 12pm hour">
+                <p class="amPm">12 pm</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell" id="12"></textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save12pm">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+        
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 1pm hour">
+                <p class="amPm">1 pm</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell" id="1"></textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save1pm">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 2pm hour">
+                <p class="amPm">2 pm</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell" id="2"></textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save2pm">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 3pm hour">
+                <p class="amPm">3 pm</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell" id="3"></textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save3pm">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 4pm hour">
+                <p class="amPm">4 pm</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell" id="4"></textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save4pm">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+
+        <div class="row schedule">
+
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1 5pm hour">
+                <p class="amPm">5 pm</p>
+            </div>
+            <div class="col-md-6 paddingAdjust">
+                <textarea class="toDo paddingAdjustcell" id="5"></textarea>
+               </div>
+            <div class="col-md-1 save">
+                <img src="Images/save.png" class="saveImage" id="save5pm">
+            </div>
+            <div class="col-md-2">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
