@@ -15,43 +15,33 @@ currentDate.text(dateM)
 
 // To get the divs to change color after time is past
 
-
-
-// $( ".amPm" ).each(function( index ) {
-//     console.log( index + ": " + $( this ).text());
-//   });
-
-// $( ".amPm" ).each(function( index ) {
-//   var time = index + ": " + $( this ).text();
-//   console.log(time[0])
-//   });
-
 var currentHourM = moment(date).format("hA")
 console.log(currentHourM)
 
 switch (currentHourM) {
+
     case "9AM":
-        $("#9").css("background-color", "rgb(27, 104, 104)") ;
+        $("#9").css("background-color", "rgb(80, 255, 255)") ;
         $("#9").html(" ") ;
         $("#9").css("placeholder", "") ;
         break;
     case "10AM":
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
         $("#9").html(" ") ;
-        $("#10").css("background-color", "rgb(27, 104, 104)") ;
+        $("#10").css("background-color", "rgb(80, 255, 255)") ;
         break;
     case "11AM":
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
         $("#9").html(" ") ;
         $("#10").css("background-color", "rgb(27, 104, 104)") ;
-        $("#11").css("background-color", "rgb(27, 104, 104)") ;
+        $("#11").css("background-color", "rgb(80, 255, 255)") ;
         break;
     case "12PM":
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
         $("#9").html(" ") ;
         $("#10").css("background-color", "rgb(27, 104, 104)") ;
         $("#11").css("background-color", "rgb(27, 104, 104)") ;
-        $("#12").css("background-color", "rgb(27, 104, 104)") ;
+        $("#12").css("background-color", "rgb(80, 255, 255)") ;
         break;
     case "1PM":
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
@@ -59,7 +49,7 @@ switch (currentHourM) {
         $("#10").css("background-color", "rgb(27, 104, 104)") ;
         $("#11").css("background-color", "rgb(27, 104, 104)") ;
         $("#12").css("background-color", "rgb(27, 104, 104)") ;
-        $("#1").css("background-color", "rgb(27, 104, 104)") ;
+        $("#1").css("background-color", "rgb(80, 255, 255)") ;
         break;
     case "2PM":
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
@@ -68,7 +58,7 @@ switch (currentHourM) {
         $("#11").css("background-color", "rgb(27, 104, 104)") ;
         $("#12").css("background-color", "rgb(27, 104, 104)") ;
         $("#1").css("background-color", "rgb(27, 104, 104)") ;
-        $("#2").css("background-color", "rgb(27, 104, 104)") ;
+        $("#2").css("background-color", "rgb(80, 255, 255)") ;
         break;
     case "3PM":
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
@@ -78,7 +68,7 @@ switch (currentHourM) {
         $("#12").css("background-color", "rgb(27, 104, 104)") ;
         $("#1").css("background-color", "rgb(27, 104, 104)") ;
         $("#2").css("background-color", "rgb(27, 104, 104)") ;
-        $("#3").css("background-color", "rgb(27, 104, 104)") ;
+        $("#3").css("background-color", "rgb(80, 255, 255)") ;
         break;
     case "4PM":
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
@@ -89,9 +79,21 @@ switch (currentHourM) {
         $("#1").css("background-color", "rgb(27, 104, 104)") ;
         $("#2").css("background-color", "rgb(27, 104, 104)") ;
         $("#3").css("background-color", "rgb(27, 104, 104)") ;
-        $("#4").css("background-color", "rgb(27, 104, 104)") ;
+        $("#4").css("background-color", "rgb(80, 255, 255)") ;
         break;
     case "5PM":
+        $("#9").css("background-color", "rgb(27, 104, 104)") ;
+        $("#9").html(" ") ;
+        $("#10").css("background-color", "rgb(27, 104, 104)") ;
+        $("#11").css("background-color", "rgb(27, 104, 104)") ;
+        $("#12").css("background-color", "rgb(27, 104, 104)") ;
+        $("#1").css("background-color", "rgb(27, 104, 104)") ;
+        $("#2").css("background-color", "rgb(27, 104, 104)") ;
+        $("#3").css("background-color", "rgb(27, 104, 104)") ;
+        $("#4").css("background-color", "rgb(27, 104, 104)") ;
+        $("#5").css("background-color", "rgb(80, 255, 255)") ;
+
+    case ("8PM") || ("9PM") || ("10PM") || ("11PM"):
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
         $("#9").html(" ") ;
         $("#10").css("background-color", "rgb(27, 104, 104)") ;
