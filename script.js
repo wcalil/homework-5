@@ -92,8 +92,13 @@ switch (currentHourM) {
         $("#3").css("background-color", "rgb(27, 104, 104)") ;
         $("#4").css("background-color", "rgb(27, 104, 104)") ;
         $("#5").css("background-color", "rgb(80, 255, 255)") ;
-
-    case ("8PM") || ("9PM") || ("10PM") || ("11PM"):
+        break;
+    case "6PM":
+    case "7PM":
+    case "8PM":
+    case "9PM": 
+    case "10PM":
+    case "11PM":
         $("#9").css("background-color", "rgb(27, 104, 104)") ;
         $("#9").html(" ") ;
         $("#10").css("background-color", "rgb(27, 104, 104)") ;
@@ -104,6 +109,7 @@ switch (currentHourM) {
         $("#3").css("background-color", "rgb(27, 104, 104)") ;
         $("#4").css("background-color", "rgb(27, 104, 104)") ;
         $("#5").css("background-color", "rgb(27, 104, 104)") ;
+    
   }
 
 
@@ -243,8 +249,19 @@ $("#save5pm").click(function(){
 
 $("#5").val(localStorage.getItem("ToDoAt5"))
 
+//Clear Scheduler
 
+$(".clearButton").click(function(){
+    var confirmV = confirm("Are you sure you want to delete your Todos?")
+    
+    switch (confirmV){
+    case true:
+    localStorage.clear();
+    location.reload(true);
 
+}
+
+})
 
 
 })
