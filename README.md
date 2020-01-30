@@ -19,6 +19,6 @@ The top with H1 "Work Day Schedule" was created in one row with 12 columns with 
 
 The JQuery started capturing the date and time from the function new Date () and transforming its format using the moment library.
 
-It was developed a switch condition to know if the time was past, present, or future and change the CSS background color of the text area.
+It was developed a loop to know if the time was past, present, or future and change the CSS background color of the text area.
 
 The last block of Jquery code was created to store locally the text written in th
